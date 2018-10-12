@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class Main {
         Random rand = new Random();
         int index = rand.nextInt(colores.size() - 1);
         String colores4 = colores.get(index);
-        System.out.println("\n The color of the leaves are" + colores4 + " ");
+        System.out.println("\n " + colores4 + " ");
 
         //Randomly selected string form the Array list.
         Random Rand = new Random();
@@ -43,36 +44,38 @@ public class Main {
         //getting inmput
 
 
+
         Scanner in = new Scanner(System.in);
         System.out.println("Enter a number in Fahrenheit");
-        int temperature = in.nextInt();
+        int Fahrenheit = in.nextInt();
         System.out.println();
+
+
         String userInput = "";
 
         do {
 
 
-            System.out.println("Enter a number in Fahrenheit");
-            double Fahr = in.nextDouble();
-            if (temperature >= 45 || temperature <= 70) {
-                System.out.println("Today`s weather is a perfact fall a day for a cup of");
-            } else if (temperature > 70) {
+           System.out.println("Enter a number in Fahrenheit");
+             Fahrenheit = in.nextInt();
+            if (Fahrenheit >= 45 && Fahrenheit <= 70) {
+                System.out.println("Today`s weather is a perfact fall a day for a cup of "+ dirnks3 + " The colore of the the lives are " + colores4);
+            } else if (Fahrenheit>71) {
                 System.out.println("The weather is a bit warm for fall.");
-            } else {
-                System.out.println("The weater is a bit chilly.");
+            } else if (Fahrenheit <44){
+                System.out.println("The weather is a bit chilly for fall." );
             }
             System.out.println("would you like to enter another temperature Y(yes) or N(no):");
             userInput = in.next();
         } while (!userInput.equalsIgnoreCase("no"));
+
     }
 
 
+}
 
 
 
-
-
-            }
 
 
 
